@@ -423,6 +423,7 @@
   ],
   "definitions": {
     "KvKey": {
+      "description": "A path to an IAVL storage node.",
       "type": "object",
       "required": [
         "key",
@@ -430,7 +431,7 @@
       ],
       "properties": {
         "key": {
-          "description": "Key you want to read from the storage",
+          "description": "The second half of the storage path. The remaining part of the full path to an IAVL storage node.",
           "type": "array",
           "items": {
             "type": "integer",
@@ -439,7 +440,7 @@
           }
         },
         "path": {
-          "description": "Path (storage prefix) to the storage where you want to read value by key (usually name of cosmos-sdk module: 'staking', 'bank', etc.)",
+          "description": "The first half of the storage path. It is supposed to be a substore name for the query (e.g. bank, staking, etc.).",
           "type": "string"
         }
       },

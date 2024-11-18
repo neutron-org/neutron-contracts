@@ -15,7 +15,7 @@ overflow-checks = true
 
 [workspace.dependencies]
 cosmwasm-std = "2.1.0"
-neutron-std = { git = "https://github.com/neutron-org/neutron-std", branch = "main" }
+neutron-std = { git = "https://github.com/neutron-org/neutron-std", branch = "feat/refactor-icq-module-documentation" }
 cosmwasm-schema = { version = "2.1.0", default-features = false }
 cw2 = "2.0.0"
 cw-storage-plus = "2.0.0"
